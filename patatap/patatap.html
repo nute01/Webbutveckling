@@ -1,0 +1,24 @@
+<!<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <script src="js/paper-full.js"></script>
+    <link rel="stylesheet" href="css/patt.css">
+    <script src="text/javascript" src="js/patt.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.3/howler.js"></script>
+
+    <script type="text/paperscript" canvas="myCanvas">
+     function onKeyDown(){
+       var maxP = new Point(view.size.width, view.size.height);
+       new Path.Circle(new Point(1900,1080)*Point.random(),50).fillColor="green";
+       console.log(maxP);
+     }
+
+    </script>
+  </head>
+  <body>
+      <canvas id ="myCanvas" resize></canvas>
+  </body>
+</html>
