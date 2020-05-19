@@ -1,0 +1,82 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x:hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+img{
+  margin-top: -10px
+}
+.navbar-brand{
+  height: 4rem;
+}
+nav{
+  background-color: #FFC173;
+}
+/*---iOS landing page--*/
+.landing{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  background: black;
+  background-image: url(../img/mainpage.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  z-index:-1;
+}
+.home-wrap{
+  clip: rect(0, auto, auto,0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner{
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit- transform: translateZ(0);
+           transform: translateZ(0);
+  will-change: transform;
+}
+.font{
+  font-weight: 500;
+}
+.st{
+height: auto;
+  width: auto;
+  padding-bottom: 5%;
+  background-color: black;
+  background-image: url("../img/sortiment.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+}
+.sortiment-bg{
+  background-color:#FFC173;
+}
+.Li{
+  margin-left: 10%;
+  font-weight: 500;
+}
+.center{
+  margin-left: 38.5%;
+}
+@media (max-width:700px) {
+  .center, .punkt {
+    margin-left: 0%;
+    text-align: center;
+    text-decoration: none;
+  }
+}
